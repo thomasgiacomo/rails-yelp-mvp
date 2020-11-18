@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10">
+      <h1>Please find below a list of all the restaurants</h1>
+      <ul class="list-group">
+        <% @restaurants.each do |restaurant|%>
+          <li class="list-group-item">
+            <%= link_to restaurant.name, restaurant_path(restaurant)%>
+          </li>
+        <%end%>
+      </ul>
+    </div>
+  </div>
+</div>
+
